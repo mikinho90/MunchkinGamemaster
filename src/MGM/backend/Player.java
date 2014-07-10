@@ -20,26 +20,33 @@ public class Player {
 		return this.level;
 	}
 
-	public void levelUP(){
+	public Integer levelUP(){
 		this.level++;
+		return level;
 	}
 	
-	public void levelDOWN(){
+	public Integer levelDOWN(){
 		this.level--;
+		return level;
 	}
 
 	public Integer getBoni() {
 		return this.boni;
 	}
 	
-	public void boniUP(){
+	public Integer boniUP(){
 		this.boni++;
+		return this.boni;
 	}
 	
-	public void boniDOWN(){
+	public Integer boniDOWN(){
 		this.boni--;
+		return this.boni;
 	}
 
+	public Integer getPower(){
+		return level+boni;
+	}
 	
 
 }
